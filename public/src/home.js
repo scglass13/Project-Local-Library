@@ -31,7 +31,7 @@ function getMostCommonGenres(books = []) {
       ? (temp[genreLocation].count = temp[genreLocation].count + 1)
       : temp.push({ name: genre, count: 1 });
   });
-  temp.sort((a, b) => b.count - a.count);
+  temp.sort((itemA, itemB) => itemB.count - itemA.count);
   if (temp.length > 5) {
     return temp.slice(0, 5);
   }
