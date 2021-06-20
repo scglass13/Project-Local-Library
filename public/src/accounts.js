@@ -5,7 +5,7 @@ function findAccountById(accounts, id) {
 }
 
 function sortAccountsByLastName(accounts) {
-  return accounts.sort((a, b) => (a.name.last > b.name.last ? 1 : -1));
+  return accounts.sort((nameA, nameB) => (nameA.name.last > nameB.name.last ? 1 : -1));
 }
 
 function getTotalNumberOfBorrows(account, books) {
